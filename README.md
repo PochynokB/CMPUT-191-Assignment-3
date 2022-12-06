@@ -16,7 +16,7 @@ In this step, we found a csv file from https://www.kaggle.com/datasets/mathurina
 ![image](https://user-images.githubusercontent.com/115324925/205717700-252e9920-e8c6-4fab-a82c-6d6b0fd5f7aa.png)
 
 ## 3. We then had to find the exchange rates (by currency code) for each country in our analysis.
-We were able to find and scrape from an API to obtain a table of the exchange rates in canada and USA for each country and the currency codes used to define each currency. This is the API we used:https://api.exchangerate.host/latest. (Because the exchange rates were in USD, we had to do some simple data manipulations to obtain a column converted into CAD.) We then found scraped this table https://www.iban.com/currency-codes to get each country with their respective currency code and after droping some column, we joined the tables into one singular table containing country code, country, exchange rate in CAD and exchange rate in USD. Here is what that table looks like:
+We were able to find and scrape from an API to obtain a table of the exchange rates in canada and USA for each country and the currency codes used to define each currency. This is the API we used:https://api.exchangerate.host/latest. We then found scraped this table https://www.iban.com/currency-codes to get each country with their respective currency code and after droping some column, we joined the tables into one singular table containing country code, country, exchange rate in CAD and exchange rate in USD. Here is what that table looks like:
 
 ![image](https://user-images.githubusercontent.com/115324925/205718729-e83b5b20-e98c-40a7-83cd-b0e5c5d043ad.png)
 
