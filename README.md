@@ -17,6 +17,7 @@ In this step, we found a csv file from https://www.kaggle.com/datasets/mathurina
 
 ## 3. We then had to find the exchange rates (by currency code) for each country in our analysis.
 We were able to find and scrape from an API to obtain a table of the exchange rates in canada and USA for each country and the currency codes used to define each currency. This is the API we used:https://api.exchangerate.host/latest. (Because the exchange rates were in USD, we had to do some simple data manipulations to obtain a column converted into CAD.) We then found scraped this table https://www.iban.com/currency-codes to get each country with their respective currency code and after droping some column, we joined the tables into one singular table containing country code, country, exchange rate in CAD and exchange rate in USD. Here is what that table looks like:
+
 ![image](https://user-images.githubusercontent.com/115324925/205718729-e83b5b20-e98c-40a7-83cd-b0e5c5d043ad.png)
 
 ## 4. Next, we imported the data on the external factors which we believe may have an impact on the price discrepancies between the different countries.
@@ -32,17 +33,15 @@ We now have our fully clean tables that we will use to do our analysis on:
 
 ## 6. Bar Charts!
 Using a bar chart, we have found that the countries with differences greater than $1/kg relative to Canada are: Sweden, Latvia, Denmark, and Lithuania. Additionally, the countries with differences less than $0.5/kg relative to Canada are: Hungary, Ukraine, Pakistan and Belarus. You can see these differences in our bar chart below!
+
 ![image](https://user-images.githubusercontent.com/115324925/205746400-401e5f12-3200-49a0-9ae3-8aa6268384e9.png)
 
 ## 7. Scatter!
 Next, we scattered these differences against both wheat production and average temperature. We found a coefficient of correlation for price-production and price-temperature to be -0.257 and -0.275 respectively. Here are the scatterplots:
+
 ![image](https://user-images.githubusercontent.com/115324925/205747763-c0e911fa-e56b-47c9-ade0-3602a18b2298.png)
 ![image](https://user-images.githubusercontent.com/115324925/205747789-66e6bf74-1566-4914-a048-37f108961146.png)
 
 
 ## 8. Conclusion
 Based on the scatterplots and the bar chart above, we would say that there is some correlation between the two external factors, (wheat production and temperature). This means that we have potentially found something interesting about our data, however, in order to properly examine whether or not this is a root cause of pricing inflation or deflation for flour, further analysis would be required. For example, another potential factor could be politcal trade agreements like the United-States-Mexico-Canada Agreement (USMCA).
-main
-
-
-main
